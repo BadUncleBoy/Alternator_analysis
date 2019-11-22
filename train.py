@@ -63,7 +63,7 @@ if __name__ == '__main__':
         sequence_length = tf.placeholder(tf.int32)
         
         #构建网络
-        net_output, loss, _ = build_network(config, inputs, lables, sequence_length)
+        predicate_class, predicate_regress, loss = build_network(config, inputs, lables, sequence_length)
         
         #定义优化方式
         train_op = _config_optimizer(config, global_step, loss) 
@@ -83,7 +83,7 @@ if __name__ == '__main__':
                 train_input, train_lable = net_input.train_input()
                 sequence_len = train_input.shape[1]
                 #run
-                run_item = sess.run([train_op, loss,net_output], feed_dict={inputs:train_input, lables:train_lable, sequence_length:sequence_len})
+                run_item = sess.run([train_op, loss], feed_dict={inputs:train_input, lables:train_lable, sequence_length:sequence_len})
                 steps += 1
                 if((steps + 1) % config.log_interval == 0):
                     log.write("train:epoch{},step{},train_loss: {}".format(epoch+1, steps+1, run_item[1]))
