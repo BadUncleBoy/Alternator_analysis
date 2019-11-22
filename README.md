@@ -1,5 +1,5 @@
 # Alternator_analysis
-### This project is a commercial project v1,using generator current waveform to predict generator gault type adn remaining working time.
+### This project is a commercial project v1,using generator current waveform to predict generator gault type and remaining working time.
 ## part1. Paralycite
 1. Config.py
 ```bashrc
