@@ -29,9 +29,12 @@ class CLSTM_Cell(object):
                 m_weights_size=[num_nodes, num_nodes],
                 biases_size=[1])
 
-        self.w = tf.Variable(tf.truncated_normal([num_nodes, output_dim], -0.1, 0.1))
-        self.b = tf.Variable(tf.zeros([output_dim]))
-
+        self.class_w = tf.Variable(tf.truncated_normal([num_nodes, output_dim], -0.1, 0.1))
+        self.class_b = tf.Variable(tf.zeros([output_dim]))
+        
+        self.regree_w = tf.Variable(tf.truncated_normal([num_nodes, output_dim], -0.1, 0.1))
+        self.regree_b = tf.Variable(tf.zeros([output_dim]))
+        
         self.saved_output = tf.Variable(tf.zeros([batch_size, num_nodes]), trainable=False)
         self.saved_state = tf.Variable(tf.zeros([batch_size, num_nodes]), trainable=False)
 
@@ -64,13 +67,27 @@ class CLSTM_Cell(object):
                 self.saved_output.assign(output),
                 self.saved_state.assign(state)
             ]):
-            # the length of outputs is batch_size
-            logits = tf.nn.xw_plus_b(output, self.w, self.b)
-            # the label should fix the size of ouputs
+            # training neetowrk's output
             
-            loss = tf.reduce_mean(
+            #logits_class [config.batchsize, config.lables_num]
+            logits_class = tf.nn.xw_plus_b(output, self.class_w, self.class_b)
+            
+            #logits_regree [config.batchsize,config.labels_num]
+            lgotis_regree = tf.nn.xw_plus_b(output, self.regree_w, self.regree_b)
+            
+            #loss分为两个部分：分类网络loss和回归网络loss
+            loss_class = tf.reduce_mean(
                 tf.nn.softmax_cross_entropy_with_logits(
-                    labels=labels,
-                    logits=logits))
-            train_prediction = tf.nn.softmax(logits)
-        return logits, loss, train_prediction
+                    labels=labels[:, 0, :],
+                    logits=logits_class))
+            class_prediction = tf.nn.softmax(logits_class)
+            
+            loss_regree = tf.reduce_sum(lgotis_regree -labels[:,1,:])
+        
+        #网络输出：分类网络输出，回归网络输出，loss
+        '''
+            shape:
+                class_predication:  [config.batchsize, config.labels_num]
+                logits_regree:      [config.batchsize, config.labels_num]
+        '''
+        return class_prediction, lgotis_regree, loss_class + loss_regree

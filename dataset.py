@@ -19,7 +19,7 @@ class CNet_Input(object):
             lable        :  [Batch_size, one_hot_lable_num]
         notice :    sequence_length is not fixed
         '''
-        return np.zeros((1,10,self.config.input_dim)),np.zeros((1,8))
+        return np.zeros((1, 10, self.config.input_dim)),np.zeros((1, 2, 8))
 
     def val_input(self):
         
