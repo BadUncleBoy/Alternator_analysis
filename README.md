@@ -24,7 +24,7 @@ nothing to show
 network's training data input
 ```
 
-## part2. requitements
+## part2. requirements
 ```bashrc
 tensorflow
 numpy
