@@ -1,0 +1,2 @@
+# Alternator_analysis
+依据发电机电流预测发电机故障以及故障时间
