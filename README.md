@@ -56,6 +56,7 @@ $ python test.py
 ## part4. Running
 自己实现一个dataset的数据接口，其需继承自CNet_Input类。
 在自定义类中，需要实现
+```bashrc
 def train_input(self):
     返回值: train_sample, train_lable
     返回值格式: train_sample [config.batchsize,sequence_length config.input_dim]
@@ -72,3 +73,4 @@ def test_input(self):
 train_sample_num:  训练集样本数量
 test_sample_num:   验证集样本数量
 eval_sample_num:   测试集样本数量
+```
