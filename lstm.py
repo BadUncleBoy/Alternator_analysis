@@ -90,4 +90,4 @@ class CLSTM_Cell(object):
                 class_predication:  [config.batchsize, config.labels_num]
                 logits_regree:      [config.batchsize, config.labels_num]
         '''
-        return class_prediction, lgotis_regree, loss_class + loss_regree
+        return class_prediction, lgotis_regree, loss_class

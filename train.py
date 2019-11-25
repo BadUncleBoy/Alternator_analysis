@@ -3,7 +3,7 @@ import numpy as np
 from config import Config
 from lstm import CLSTM_Cell
 from log import Clog
-from dataset import CNet_Input
+from Data import CEletricDate as CNet_Input
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]="1"
 def _config_optimizer(config, global_step, loss):
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         '''
         global_step = tf.Variable(0, trainable=False, collections=[tf.GraphKeys.LOCAL_VARIABLES])
         inputs = tf.placeholder(tf.float32,shape=[config.batch_size,None,config.input_dim])
-        lables = tf.placeholder(tf.float32,shape=[config.batch_size,2,8])
+        lables = tf.placeholder(tf.float32,shape=[config.batch_size,2,config.lables_num])
         sequence_length = tf.placeholder(tf.int32)
         
         #构建网络

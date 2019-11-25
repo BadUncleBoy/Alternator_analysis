@@ -1,9 +1,9 @@
 import argparse
 def parse_training_args(parser):
-    parser.add_argument('--workdir',type=str, default='/data/zy/',
+    parser.add_argument('--workdir',type=str, default='./',
                         help='the work dir of this program')
     
-    parser.add_argument('--input_dim',type=int,default=25000,
+    parser.add_argument('--input_dim',type=int,default=2500,
                         help='def the input sampling length of the sinusoid')
     
     parser.add_argument('--batch_size',type=int,default=1)
@@ -15,10 +15,10 @@ def parse_training_args(parser):
     parser.add_argument('--max_tp_keep',type=int,default=5,
                         help='only save referring number weights file')
 
-    parser.add_argument('--epoch',type=int,default=10,
+    parser.add_argument('--epoch',type=int,default=200,
                         help='training epoches')
 
-    parser.add_argument('--lables_num',type=int,default=8,
+    parser.add_argument('--lables_num',type=int,default=3,
                         help='the num of the predicating lables')
    
     parser.add_argument('--eval_interval',type=int,default=100,
