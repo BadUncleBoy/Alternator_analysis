@@ -69,7 +69,9 @@ def val_input(self):
 def test_input(self):
     同上
 三个函数。
+```
 还需其中定义三个变量:
+```bashrc
 train_sample_num:  训练集样本数量
 test_sample_num:   验证集样本数量
 eval_sample_num:   测试集样本数量
