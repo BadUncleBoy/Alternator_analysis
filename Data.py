@@ -8,9 +8,8 @@ class CEletricDate(CNet_Input):
     def __init__(self,conifg):
         self.config = conifg
         self.eval_sample_num  = 0
-        self.test_sample_num  = 0
         
-        self.index = 0
+        self.train_index = 0
         self.test_index = 0
         
         self.lables_name,\
@@ -75,12 +74,12 @@ class CEletricDate(CNet_Input):
         return error_dir_names, train_sample_num, train_sample_paths, train_sample_error_kinds
     
     def train_input(self):
-        if(self.index == self.train_sample_num):
+        if(self.train_index == self.train_sample_num):
             self.__shuffle_data()
-            self.index = 0
+            self.train_index = 0
         
-        input_data_file = self.train_sample_paths[self.index]
-        input_data_kind = self.train_sample_error_kinds[self.index]
+        input_data_file = self.train_sample_paths[self.train_index]
+        input_data_kind = self.train_sample_error_kinds[self.train_index]
         input_sequence = None
         
         with open(input_data_file) as f:
@@ -97,8 +96,9 @@ class CEletricDate(CNet_Input):
             input_data[0,index,:] = input_sequence[index * self.config.input_dim:(index + 1) * self.config.input_dim]
         
         input_label[0, 0, input_data_kind] = 1
+        input_label[0, 1, input_data_kind] = 200
         
-        self.index += 1
+        self.train_index += 1
 
         return input_data, input_label        
 
@@ -122,7 +122,8 @@ class CEletricDate(CNet_Input):
             input_data[0,index,:] = input_sequence[index * self.config.input_dim:(index + 1) * self.config.input_dim]
         
         input_label[0, 0, input_data_kind] = 1
-        
+        input_label[0, 1, input_data_kind] = 200    
+    
         self.test_index += 1
         
         return input_data, input_label

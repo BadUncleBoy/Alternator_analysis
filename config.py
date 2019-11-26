@@ -10,12 +10,12 @@ def parse_training_args(parser):
      
     parser.add_argument('--hidden_dim',type=int,default=64)
     
-    parser.add_argument('--model_file',type=str,default='results/results.cpkt')
+    parser.add_argument('--model_dir',type=str,default='./results')
     
     parser.add_argument('--max_tp_keep',type=int,default=5,
                         help='only save referring number weights file')
 
-    parser.add_argument('--epoch',type=int,default=200,
+    parser.add_argument('--epoch',type=int,default=100,
                         help='training epoches')
 
     parser.add_argument('--lables_num',type=int,default=3,
@@ -58,7 +58,7 @@ def parse_training_args(parser):
     parser.add_argument('--adam_epsilon',type=float,default=1e-08)
     
     #Exponential learing_rete parameter
-    parser.add_argument('--learning_rate',type=float,default=0.001,
+    parser.add_argument('--learning_rate',type=float,default=0.01,
                     help='Initial learning rate')
 
     parser.add_argument('--learning_rate_decay_type',type=str,default='exponential',
