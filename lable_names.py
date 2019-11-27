@@ -1,0 +1,1 @@
+lable_names = ['xiangjianduanlu', 'zajianduanlu', 'zhengchang']

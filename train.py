@@ -5,7 +5,7 @@ from lstm import CLSTM_Cell
 from log import Clog
 from Data import CEletricDate as CNet_Input
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="1"
+os.environ["CUDA_VISIBLE_DEVICES"]="4"
 def _config_optimizer(config, global_step, loss):
     learning_rate = None
     if(config.learning_rate_decay_type == 'exponential'):

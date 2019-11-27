@@ -3,16 +3,18 @@ import random
 import numpy as np
 from config import Config
 from dataset import CNet_Input
+from lable_names import lable_names
 class CEletricDate(CNet_Input):
     
     def __init__(self,conifg):
+        
+        self.lable_names = lable_names
         self.config = conifg
         self.eval_sample_num  = 0
         
         self.train_index = 0
         self.test_index = 0
         
-        self.lables_name,\
         self.train_sample_num,\
         self.train_sample_paths,\
         self.train_sample_error_kinds\
@@ -46,13 +48,12 @@ class CEletricDate(CNet_Input):
         test_sample_num = 0
         
         test_dir_path = os.path.join(self.config.workdir, self.config.test_set_dir)
-        error_dir_names = os.listdir(test_dir_path)
         
-        for error_dir_name in error_dir_names:
+        for index, error_dir_name in enumerate(self.lable_names):
             test_error_dir_path = os.path.join(test_dir_path, error_dir_name + '/')
             for sample_name in os.listdir(test_error_dir_path):
                 test_sample_paths.append(os.path.join(test_error_dir_path, sample_name))
-                test_sample_error_kinds.append(self.lables_name.index(error_dir_name))
+                test_sample_error_kinds.append(index)
                 test_sample_num += 1
         
         return test_sample_num, test_sample_paths, test_sample_error_kinds
@@ -62,16 +63,15 @@ class CEletricDate(CNet_Input):
         train_sample_error_kinds = []
         train_sample_num = 0
         train_dir_path = os.path.join(self.config.workdir, self.config.train_set_dir)
-        error_dir_names = os.listdir(train_dir_path)
         
-        for index, error_dir_name in enumerate(error_dir_names):
+        for index, error_dir_name in enumerate(self.lable_names):
             train_error_dir_path = os.path.join(train_dir_path, error_dir_name + '/')
             for sample_name in os.listdir(train_error_dir_path):
                 train_sample_paths.append(os.path.join(train_error_dir_path, sample_name))
                 train_sample_error_kinds.append(index)
                 train_sample_num += 1
         
-        return error_dir_names, train_sample_num, train_sample_paths, train_sample_error_kinds
+        return train_sample_num, train_sample_paths, train_sample_error_kinds
     
     def train_input(self):
         if(self.train_index == self.train_sample_num):

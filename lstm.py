@@ -73,16 +73,18 @@ class CLSTM_Cell(object):
             logits_class = tf.nn.xw_plus_b(output, self.class_w, self.class_b)
             
             #logits_regree [config.batchsize,config.labels_num]
-            lgotis_regree = tf.nn.xw_plus_b(output, self.regree_w, self.regree_b)
-            
+            logits_regree = tf.nn.xw_plus_b(output, self.regree_w, self.regree_b)
+            logits_regree = tf.nn.relu(logits_regree)
+
             #loss分为两个部分：分类网络loss和回归网络loss
             loss_class = tf.reduce_mean(
                 tf.nn.softmax_cross_entropy_with_logits(
                     labels=labels[:, 0, :],
                     logits=logits_class))
+
             class_prediction = tf.nn.softmax(logits_class)
             
-            loss_regree = tf.reduce_sum(tf.abs(labels[:,0,:] * lgotis_regree -labels[:,1,:]))
+            loss_regree      = tf.reduce_sum(tf.abs(class_prediction * logits_regree -labels[:,1,:]))
         
         #网络输出：分类网络输出，回归网络输出，loss
         '''
@@ -90,4 +92,4 @@ class CLSTM_Cell(object):
                 class_predication:  [config.batchsize, config.labels_num]
                 logits_regree:      [config.batchsize, config.labels_num]
         '''
-        return class_prediction, lgotis_regree, loss_class + 0.5 * loss_regree
+        return class_prediction, logits_regree, loss_class + 0.5 * loss_regree
