@@ -1,0 +1,102 @@
+2019-11-27 17:21:19,035-lstm_logger-{Sample:1; predicates_class :[[1.0536092e-01 8.9463902e-01 5.0015552e-09]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,035-lstm_logger-{Sample:1: predicates_regree:[[146.06197   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,050-lstm_logger-{Sample:2; predicates_class :[[0.92121035 0.07348268 0.00530695]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,050-lstm_logger-{Sample:2: predicates_regree:[[121.514496   0.         0.      ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,066-lstm_logger-{Sample:3; predicates_class :[[1.000000e+00 7.082031e-09 5.869556e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,066-lstm_logger-{Sample:3: predicates_regree:[[198.13387   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,066-lstm_logger-{Sample:4; predicates_class :[[9.9999607e-01 3.9819429e-06 1.1949347e-10]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,066-lstm_logger-{Sample:4: predicates_regree:[[198.56602   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,082-lstm_logger-{Sample:5; predicates_class :[[9.9946660e-01 5.3346710e-04 2.8400331e-12]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,082-lstm_logger-{Sample:5: predicates_regree:[[147.40916   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,082-lstm_logger-{Sample:6; predicates_class :[[9.9999988e-01 1.4196192e-07 1.6514799e-13]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,082-lstm_logger-{Sample:6: predicates_regree:[[218.62695   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,097-lstm_logger-{Sample:7; predicates_class :[[9.9993229e-01 6.7711211e-05 1.2755339e-12]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,097-lstm_logger-{Sample:7: predicates_regree:[[160.84108   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,097-lstm_logger-{Sample:8; predicates_class :[[9.990683e-01 9.219384e-04 9.760882e-06]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,097-lstm_logger-{Sample:8: predicates_regree:[[187.73924   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,097-lstm_logger-{Sample:9; predicates_class :[[1.0000000e+00 9.8226414e-09 1.9766395e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,097-lstm_logger-{Sample:9: predicates_regree:[[188.592   0.      0.   ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,113-lstm_logger-{Sample:10; predicates_class :[[9.9984419e-01 1.5567952e-04 7.0918254e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,113-lstm_logger-{Sample:10: predicates_regree:[[224.85321   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,113-lstm_logger-{Sample:11; predicates_class :[[9.9889779e-01 1.1001716e-03 2.0271621e-06]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,113-lstm_logger-{Sample:11: predicates_regree:[[207.2329   0.       0.    ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,128-lstm_logger-{Sample:12; predicates_class :[[9.99999881e-01 1.15746666e-07 4.61049168e-13]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,128-lstm_logger-{Sample:12: predicates_regree:[[194.3207   0.       0.    ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,128-lstm_logger-{Sample:13; predicates_class :[[9.99775827e-01 2.24222604e-04 1.38115075e-11]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,128-lstm_logger-{Sample:13: predicates_regree:[[187.91486   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,144-lstm_logger-{Sample:14; predicates_class :[[9.9998438e-01 1.2003559e-05 3.5803946e-06]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,144-lstm_logger-{Sample:14: predicates_regree:[[145.2814   0.       0.    ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,144-lstm_logger-{Sample:15; predicates_class :[[9.9998331e-01 1.6649721e-05 2.8985566e-12]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,144-lstm_logger-{Sample:15: predicates_regree:[[207.12413   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,144-lstm_logger-{Sample:16; predicates_class :[[9.9999857e-01 1.3830715e-06 1.9322146e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,144-lstm_logger-{Sample:16: predicates_regree:[[200.776   0.      0.   ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,160-lstm_logger-{Sample:17; predicates_class :[[1.0000000e+00 3.7851624e-08 1.1498933e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,160-lstm_logger-{Sample:17: predicates_regree:[[197.18744   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,160-lstm_logger-{Sample:18; predicates_class :[[0.88680965 0.00437218 0.10881814]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,160-lstm_logger-{Sample:18: predicates_regree:[[144.56367   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,175-lstm_logger-{Sample:19; predicates_class :[[9.9999976e-01 2.9400917e-07 4.4739591e-11]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,175-lstm_logger-{Sample:19: predicates_regree:[[194.30455   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,175-lstm_logger-{Sample:20; predicates_class :[[9.9999964e-01 3.0566076e-07 9.8458252e-16]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,175-lstm_logger-{Sample:20: predicates_regree:[[206.41127   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,191-lstm_logger-{Sample:21; predicates_class :[[9.9786443e-01 2.1356530e-03 1.2199834e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,191-lstm_logger-{Sample:21: predicates_regree:[[177.72574   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,191-lstm_logger-{Sample:22; predicates_class :[[9.9969697e-01 3.0300836e-04 8.2811511e-14]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,191-lstm_logger-{Sample:22: predicates_regree:[[214.99696   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,191-lstm_logger-{Sample:23; predicates_class :[[9.99979138e-01 2.07893718e-05 1.02671635e-07]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,191-lstm_logger-{Sample:23: predicates_regree:[[163.50122   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,207-lstm_logger-{Sample:24; predicates_class :[[9.999963e-01 2.836760e-06 8.557377e-07]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,207-lstm_logger-{Sample:24: predicates_regree:[[201.37999   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,207-lstm_logger-{Sample:25; predicates_class :[[0.977539   0.0211401  0.00132086]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,207-lstm_logger-{Sample:25: predicates_regree:[[152.0163   0.       0.    ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,222-lstm_logger-{Sample:26; predicates_class :[[9.9999857e-01 1.4802306e-06 3.2291222e-13]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,222-lstm_logger-{Sample:26: predicates_regree:[[210.04668   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,222-lstm_logger-{Sample:27; predicates_class :[[9.997768e-01 2.232292e-04 9.607813e-12]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,222-lstm_logger-{Sample:27: predicates_regree:[[145.93495   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,222-lstm_logger-{Sample:28; predicates_class :[[9.9999976e-01 2.2819653e-07 7.4667167e-16]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,238-lstm_logger-{Sample:28: predicates_regree:[[215.70996   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,238-lstm_logger-{Sample:29; predicates_class :[[9.999608e-01 3.916399e-05 3.710869e-09]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,238-lstm_logger-{Sample:29: predicates_regree:[[195.74554   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,238-lstm_logger-{Sample:30; predicates_class :[[9.9999976e-01 2.7413370e-07 2.4515030e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,238-lstm_logger-{Sample:30: predicates_regree:[[212.43721   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,253-lstm_logger-{Sample:31; predicates_class :[[0.16922836 0.02770567 0.80306596]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,253-lstm_logger-{Sample:31: predicates_regree:[[117.15374   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,253-lstm_logger-{Sample:32; predicates_class :[[9.9976498e-01 1.1867339e-04 1.1637460e-04]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,253-lstm_logger-{Sample:32: predicates_regree:[[160.96992   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,300-lstm_logger-{Sample:33; predicates_class :[[9.9999714e-01 2.8309382e-06 7.9525539e-11]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,300-lstm_logger-{Sample:33: predicates_regree:[[189.76433   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,300-lstm_logger-{Sample:34; predicates_class :[[9.9999857e-01 1.3796517e-06 1.9507297e-08]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,300-lstm_logger-{Sample:34: predicates_regree:[[200.75069   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,316-lstm_logger-{Sample:35; predicates_class :[[9.9999976e-01 1.4448050e-07 1.5506896e-07]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,316-lstm_logger-{Sample:35: predicates_regree:[[186.17805   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,316-lstm_logger-{Sample:36; predicates_class :[[9.99427736e-01 1.12443704e-04 4.59788222e-04]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,316-lstm_logger-{Sample:36: predicates_regree:[[145.71211   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,316-lstm_logger-{Sample:37; predicates_class :[[9.9998784e-01 1.2190630e-05 8.9078593e-09]]; lables[[1. 0. 0.]]}
+2019-11-27 17:21:19,316-lstm_logger-{Sample:37: predicates_regree:[[161.92552   0.        0.     ]]; lables[[200.   0.   0.]]}
+2019-11-27 17:21:19,332-lstm_logger-{Sample:38; predicates_class :[[1.5604630e-04 9.9943668e-01 4.0718232e-04]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,332-lstm_logger-{Sample:38: predicates_regree:[[151.97649   0.        0.     ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,332-lstm_logger-{Sample:39; predicates_class :[[1.1758738e-02 9.8824126e-01 3.1650471e-10]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,332-lstm_logger-{Sample:39: predicates_regree:[[133.2247   0.       0.    ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,347-lstm_logger-{Sample:40; predicates_class :[[3.1698406e-02 9.6830153e-01 8.4587043e-08]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,347-lstm_logger-{Sample:40: predicates_regree:[[145.32285   0.        0.     ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,347-lstm_logger-{Sample:41; predicates_class :[[9.9586332e-01 3.9028628e-03 2.3373400e-04]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,347-lstm_logger-{Sample:41: predicates_regree:[[139.80672   0.        0.     ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,347-lstm_logger-{Sample:42; predicates_class :[[1.4352094e-04 9.9690336e-01 2.9531030e-03]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,347-lstm_logger-{Sample:42: predicates_regree:[[146.01007   0.        0.     ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,363-lstm_logger-{Sample:43; predicates_class :[[9.99999404e-01 5.36590335e-07 1.40269046e-14]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,363-lstm_logger-{Sample:43: predicates_regree:[[204.13223   0.        0.     ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,363-lstm_logger-{Sample:44; predicates_class :[[9.6372283e-01 3.6277108e-02 9.4443238e-12]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,363-lstm_logger-{Sample:44: predicates_regree:[[127.271515   0.         0.      ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,378-lstm_logger-{Sample:45; predicates_class :[[0.15972696 0.23944977 0.60082334]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,378-lstm_logger-{Sample:45: predicates_regree:[[16.203444  0.        0.      ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,378-lstm_logger-{Sample:46; predicates_class :[[0.00587076 0.54724324 0.44688597]]; lables[[0. 1. 0.]]}
+2019-11-27 17:21:19,378-lstm_logger-{Sample:46: predicates_regree:[[98.69944  0.       0.     ]]; lables[[  0. 200.   0.]]}
+2019-11-27 17:21:19,394-lstm_logger-{Sample:47; predicates_class :[[7.6279875e-06 6.0428074e-04 9.9938810e-01]]; lables[[0. 0. 1.]]}
+2019-11-27 17:21:19,394-lstm_logger-{Sample:47: predicates_regree:[[99.89948  0.       0.     ]]; lables[[  0.   0. 200.]]}
+2019-11-27 17:21:19,394-lstm_logger-{Sample:48; predicates_class :[[0.00251303 0.4630279  0.53445905]]; lables[[0. 0. 1.]]}
+2019-11-27 17:21:19,394-lstm_logger-{Sample:48: predicates_regree:[[89.00481  0.       0.     ]]; lables[[  0.   0. 200.]]}
+2019-11-27 17:21:19,394-lstm_logger-{Sample:49; predicates_class :[[0.15972696 0.23944977 0.60082334]]; lables[[0. 0. 1.]]}
+2019-11-27 17:21:19,394-lstm_logger-{Sample:49: predicates_regree:[[16.203444  0.        0.      ]]; lables[[  0.   0. 200.]]}
+2019-11-27 17:21:19,410-lstm_logger-{Sample:50; predicates_class :[[0.00234323 0.09821944 0.89943737]]; lables[[0. 0. 1.]]}
+2019-11-27 17:21:19,410-lstm_logger-{Sample:50: predicates_regree:[[110.7614   0.       0.    ]]; lables[[  0.   0. 200.]]}
+2019-11-27 17:21:19,410-lstm_logger-{Total predision: 0.88}
+2019-11-27 17:21:19,410-lstm_logger-{Total error_rate:0.6488711936950684}
