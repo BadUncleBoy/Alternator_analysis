@@ -6,6 +6,11 @@ from log import Clog
 from Data import CEletricDate as CNet_Input
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]="4"
+
+
+
+
+
 def _config_optimizer(config, global_step, loss):
     learning_rate = None
     if(config.learning_rate_decay_type == 'exponential'):
@@ -30,26 +35,28 @@ def _config_optimizer(config, global_step, loss):
     else:
         raise ValueError('No defined optimizer type')
 
+
+
+
+
+
 def build_network(config, inputs, lables, sequence_length):
     model = CLSTM_Cell(config)
     return model.forward(inputs, lables, sequence_length)
 
-def evaluate(sess, net_input, inputs, lebles, loss, sequence_length, log):
-    Eval_sample_num=net_input.eval_sample_num
-    
-    for step in range(Eval_sample_num):
-        eval_input, eval_lable = net_input.val_input()
-        sequence_len = eval_input.shape[1]
-        run_item = sess.run([loss], feed_dict={inputs:eval_input, lables:eval_lable, sequence_length:sequence_len})
 
-        if((step + 1) % config.log_interval == 0):
-                    log.write("eval:step{},train_loss: {}".format(step, run_item[0]))
+
+
+
+
+
 
 if __name__ == '__main__':
     config = Config
     log = Clog(config)
     #net_input为网络输入类，根据该类，每一次获取网络输入的数据
     net_input = CNet_Input(config)
+
     with tf.Session() as sess:
         '''
         定义网络输入
@@ -86,10 +93,7 @@ if __name__ == '__main__':
                 run_item = sess.run([train_op, loss], feed_dict={inputs:train_input, lables:train_lable, sequence_length:sequence_len})
                 steps += 1
                 if((steps + 1) % config.log_interval == 0):
-                    log.write("train:epoch{},step{},train_loss: {}".format(epoch+1, steps+1, run_item[1]))
-                '''
-                if((steps + 1) % config.eval_interval == 0):
-                    evaluate(sess, net_input, inputs, lables, loss, sequence_length, log)
-                '''
+                    log.write("train:epoch{},step{},train_loss:{}".format(epoch+1, steps+1, run_item[1]))
             #保存网络参数
             saver.save(sess, save_path=config.save_ckpt_path, global_step=steps+1)
+            log.write("write weights to {}".format(config.save_ckpt_path))

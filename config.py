@@ -58,7 +58,7 @@ def parse_training_args(parser):
     parser.add_argument('--adam_epsilon',type=float,default=1e-08)
     
     #Exponential learing_rete parameter
-    parser.add_argument('--learning_rate',type=float,default=0.05,
+    parser.add_argument('--learning_rate',type=float,default=0.1,
                     help='Initial learning rate')
 
     parser.add_argument('--learning_rate_decay_type',type=str,default='exponential',

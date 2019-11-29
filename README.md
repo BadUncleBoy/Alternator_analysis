@@ -1,7 +1,12 @@
 # Alternator_analysis
 ### This project is a commercial project v1,using generator current waveform to predict generator gault type and remaining working time.
+
+​                                                                                **The Network Architecture**
+
+![image-20191129224202415](./data/jpg/1.png)
+
 ## part1. Paralycite
-1. Config.py
+1. config.py
 ```bashrc
 work_dir:   the work dir of this program
 input_dim:  def the input sampling length of the sinusoid
@@ -14,27 +19,26 @@ log_dir:
 ```
 2. log.py
 ```bashrc
-this file defines the format of the log, it can be shown on the screen and can also output to a file
-when output to file, just use the config --log_mode 'f'
+This file defines the format of the log, it can be shown on the screen and can also output to a file.
+When output to file, just use the config --log_mode 'f'
 the default --log_mode is 's'
 ```
 3. lstm.py
 ```bashrc
-the lstm network
+The lstm network
 ```
 4. train.py
 ```bashrc
 定义网络输入：
 inputs:[config.batchsize, None, config.input_dim]
 lables:[config.batchsize, 2, config.labels_num]
-sequence_length：定义一个训练序列的的长度。
+sequence_length： 定义一个训练序列的的长度。
 其中lables[:,0,:] 存储了故障类型的标签
-lables[:,1,:] 存储了故障停用时间的标签
+lables[:,1,:]    存储了故障停用时间的标签
 ```
 5. dataset.py
 ```bashrc
-network's training data input，just a interface, it defines the 
-format of the net's input.
+Network's training data input，just a interface, it defines the format of the net's input.
 train_input():函数生成训练网络所需要的数据
 test_input(): 函数生成测试网络所需要的数据
 ```
@@ -53,9 +57,10 @@ $ python train.py
 $ python test.py
 此函数可以直接运行，网络中有10个测试样本，测试网络输出结果存放在log/test_log.txt
 ```
-## part4. Running
-自己实现一个dataset的数据接口，其需继承自CNet_Input类。
-在自定义类中，需要实现
+## part4. Training Your Own Data
+需要自己实现一个dataset的数据接口，其需继承自CNet_Input类。
+在自定义类中，需要实现如下三个函数：
+
 ```bashrc
 def train_input(self):
     返回值: train_sample, train_lable
@@ -68,9 +73,8 @@ def val_input(self):
     同上
 def test_input(self):
     同上
-三个函数。
 ```
-还需其中定义三个变量:
+还需在类内定义三个变量:
 ```bashrc
 train_sample_num:  训练集样本数量
 test_sample_num:   验证集样本数量
